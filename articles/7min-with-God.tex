@@ -1,16 +1,25 @@
-% $Date: 2008-10-31 15:17:28 +0300 (Fri, 31 Oct 2008) $
-% $Rev: 37 $
-% $Author: condor $
-% $URL: file:///var/svn/repos/condor/latex/7min-with-God.tex $
+% $Date: 2008-10-31
+% Updated: 2024-03-04
+% $Prepared by: kdorichev@gmail.com
+% $URL: https://github.com/kdorichev/navs/blob/master/articles/7min-with-God.tex
 %
-\documentclass[12pt,article,a4paper,fittopage]{ncc}
-\usepackage[resetfonts]{cmap}
-\usepackage[utf-8]{inputenc}
-\usepackage[russian]{babel}
-%\ToCenter[h]{17cm}{25cm}
-\FromMargins[h]{2cm}{2cm}{1cm}{1cm}
+\documentclass[11pt,article,a4paper,fittopage,oneside]{article}
+\usepackage{cmap}					          % поиск в PDF
+\usepackage[T2A]{fontenc}			      % кодировка
+\usepackage[utf8]{inputenc}			    % кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+
+\usepackage{geometry} % Простой способ задавать поля
+    		\geometry{top=20mm}
+    		\geometry{bottom=10mm}
+    		\geometry{left=15mm}
+    		\geometry{right=15mm}
+
 \usepackage{url,multicol}
 \usepackage[plain,headings]{nccfancyhdr}
+\usepackage{hyperref}
 
 \newpagestyle{lheadings}[headings]{%
 	\fancyhead[c]{\nouppercase{%
@@ -24,7 +33,6 @@
    /Author (Robert D. Foster)
    /Title  (Seven minutes with God. How to plan a daily quiet time.)
    /Subject (Quiet time, Prayer, Fellowship with God.)
-%  /URL (http://lifestream.org/pdf/RuHLM.pdf)
    /Keywords (Russian translation)
    /Producer (kdorichev@gmail.com)
 }
@@ -115,26 +123,17 @@ Cтуденты Хупер и~Торнтон заметили, что их дн�
 \end{multicols}
 
 \hrule
-\vspace{0.3cm}
 \begin{footnotesize}
 \noindent
-Статья является общественным достоянием (public domain). Originally published in English as  \textsc{``Seven minutes with God. How to plan a~daily quiet time.''} by Robert D.~Foster, NavPress,\linebreak \url{www.navpress.com}.
+\begin{flushleft}
+Статья является общественным достоянием (public domain). Originally published in English as  \textsc{``Seven minutes with God. How to plan a~daily quiet time.''} by Robert D.~Foster, NavPress, \href{https://www.navpress.com/}{www.navpress.com}.
+\end{flushleft}
 
-\vspace{0.2cm}
 \noindent
-Перевод, редактирование и~верстка: Навигаторы, Россия; \url{navigators.ru@gmail.com}
+Перевод, редактирование и~верстка: Навигаторы, Россия.
 
-\vspace{0.2cm}
 \noindent
 Цитаты Библии в~тексте выполнены по Синодальному переводу.
 
 \end{footnotesize}
-
-{\tiny 
-\begin{verbatim}
-$LastChangedDate: 2008-10-31 15:17:28 +0300 (Fri, 31 Oct 2008) $
-$Revision: 37 $
-\end{verbatim}
-
-}
 \end{document}
