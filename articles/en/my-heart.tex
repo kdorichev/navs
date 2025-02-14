@@ -9,8 +9,23 @@
     		\geometry{bottom=20mm}
     		\geometry{left=25mm}
     		\geometry{right=25mm}
-\usepackage{url,multicol}
-% \setlength{\columnsep}{0.6cm}
+\usepackage{multicol}
+\usepackage{hyperref}
+\hypersetup{				% Гиперссылки
+	unicode=true,           % русские буквы в раздела PDF
+	pdftitle={My Heart Christ's Home},   % Заголовок
+	pdfauthor={Robert Boyd Munger},      % Автор
+	pdfsubject={Christian life basics},      % Тема
+	pdfcreator={Konstantin Dorichev}, % Создатель
+	% pdfproducer={LaTeX}, % Производитель
+	pdfkeywords={Jesus}  {Christ} {Christianity} {faith} {lordship}, % Ключевые слова
+	colorlinks=false,       	% false: ссылки в рамках; true: цветные ссылки
+	linkcolor=red,          % внутренние ссылки
+	citecolor=black,        % на библиографию
+	filecolor=magenta,      % на файлы
+	urlcolor=cyan           % на URL
+}
+\setlength{\columnsep}{0.6cm}
 %------------------
 
 \begin{document}
@@ -231,7 +246,8 @@ He took my life that day and I~can give you my word, there is no better way to l
 
 \vfill
 \noindent
-{\tiny This article is typesetted by the Navigators, Russia. Get copies from \url{https://github.com/kdorichev/navs/blob/master/articles/en/my-heart.pdf}
+{\small Typesetted by The Navigators, Russia.\\
+\href{https://github.com/kdorichev/navs/blob/master/articles/en/my-heart.pdf}{https://github.com/kdorichev/navs/blob/master/articles/en/my-heart.pdf}
 }
 \end{document}
 
